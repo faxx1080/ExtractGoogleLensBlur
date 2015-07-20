@@ -15,10 +15,10 @@ namespace ExtractGoogleLensBlur
     {
         static void Main(string[] args)
         {
-            
+
             Process p1 = new Process();
             p1.StartInfo.UseShellExecute = false;
-            p1.StartInfo.FileName = System.IO.Directory.GetCurrentDirectory() + "\\Externals\\" + "exiftool.exe";
+            p1.StartInfo.FileName = "exiftool.exe";
             // p1.StartInfo.WorkingDirectory = System.IO.Directory.GetCurrentDirectory() + "\\Externals";
             p1.StartInfo.CreateNoWindow = true;
             p1.StartInfo.Arguments = " -xmp -b -a " + args[0];
@@ -50,7 +50,7 @@ namespace ExtractGoogleLensBlur
             string outPath = System.IO.Directory.GetCurrentDirectory();
             string outStName = args[0];
             if (lastPathSep > 1) {
-                outPath = args[0];
+                outPath = args[0].Remove(lastPathSep + 1);
                 outStName = args[0].Substring(lastPathSep+1);
             }
 
