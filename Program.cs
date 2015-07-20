@@ -1,4 +1,7 @@
-﻿using System;
+﻿// Copyright Frank Migliorino, 2015. Licenced under GPLv3
+// See LICENSE file
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
