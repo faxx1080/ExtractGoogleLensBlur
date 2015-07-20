@@ -1,5 +1,7 @@
 ﻿// Copyright Frank Migliorino, 2015. Licenced under GPLv3
 // See LICENSE file
+// Exiftool is from http://www.sno.phy.queensu.ca/~phil/exiftool/
+// Written by Phil Harvey
 
 using System;
 using System.Collections.Generic;
